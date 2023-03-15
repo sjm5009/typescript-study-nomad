@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'GangwonEdu_OTFBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LINESeedKR-Bd';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  font-family: LINESeedKR-Bd;
+  font-weight: 700;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: rgb(245, 115, 115);
+  color: #f9f5f5;
+  font-size: 16px;
+  font-family: LINESeedKR-Bd;
+}
+
+input {
+  border: 1px solid #eee;
+  outline: none;
+  height: 38px;
+  width: 300px;
+  margin-right: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #666;
+  font-size: 16px;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 10px;
+}

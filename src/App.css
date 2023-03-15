@@ -1,0 +1,21 @@
+
+.App {
+  text-align: center;
+}
+
+.container {
+  padding: 50px 0;
+}
+
+.bg-yellow {
+  background-color: blanchedalmond;
+}
+
+.bg-gray {
+  background-color: lightgray;
+}
+
+.title {
+  font-family: LINESeedKR-Bd;
+  margin-bottom: 15px;
+}
