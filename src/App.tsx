@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import CallSignatures from './typscriptEx/CallSignature';
+import CallSignatures from './typescriptEx/CallSignature';
 
 function App() {
   return (
