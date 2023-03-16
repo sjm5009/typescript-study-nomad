@@ -13,7 +13,6 @@ const push: Push = (config) => {
     else {
         console.log(config.path);
     }
-    
 }
 
 type Add = {

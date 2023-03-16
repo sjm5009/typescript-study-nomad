@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 
-const CallSignatures = () => {
+const CallSignatureApply = () => {
     type Add = (a: number, b: number) => number // call signature
 
     const add: Add = (a, b) => {
@@ -21,7 +21,7 @@ const CallSignatures = () => {
 
     return (
         <div className="container bg-yellow">
-            <div className="title">CallSignature.tsx</div>
+            <div className="title">🌟 CallSignature 연습</div>
             <h1>{value}</h1>
             <input type="text" ref={aRef}/>
             <input type="text" ref={bRef}/>
@@ -30,4 +30,4 @@ const CallSignatures = () => {
     )
 };
 
-export default CallSignatures;
+export default CallSignatureApply;
