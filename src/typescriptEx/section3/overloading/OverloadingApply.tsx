@@ -21,6 +21,8 @@ const OverloadingApply = () => {
     const cStrRef = useRef<HTMLInputElement>(null)
 
     const clickNumberButton = (a:number) => {
+        let numRegExp = /^[0-9]+$/
+        if(!numRegExp.test(''+a)) return alert('숫자만 입력 가능합니다.');
         let num: number = Number(handleOverloadingType(a))
         setNumValue(num)
     }
@@ -48,13 +50,13 @@ const OverloadingApply = () => {
     return (
         <section>
             <div className="container bg-yellow">
-                <div className="title">🌟 Overloading - Number Overring 함수 사용</div>
+                <div className="title">🌟 Overloading - Number Overloading 함수 사용</div>
                 <h1>{numValue}</h1>
                 <input type="text" ref={aNumRef}/>
                 <button onClick={()=>clickNumberButton(Number(aNumRef.current?.value))}>2배가 되는 버튼</button>
             </div>
             <div className="container bg-gray">
-                <div className="title">🌟 Overloading - String Overring 함수 사용</div>
+                <div className="title">🌟 Overloading - String Overloading 함수 사용</div>
                 <h1>{srtValue}</h1>
                 <input type="text" ref={aStrRef}/>
                 <input type="text" ref={bStrRef}/>

@@ -13,9 +13,16 @@ const CallSignatureApply = () => {
 
     const clickButton = () => {
         if(aRef.current && bRef.current) {
-            let aVal = parseInt(aRef.current.value)
-            let bVal = parseInt(bRef.current.value)
-            setValue(add(aVal, bVal))
+            let numRegExp = /^[0-9]+$/
+            let a = aRef.current.value
+            let b = bRef.current.value
+            if(numRegExp.test(a) && numRegExp.test(b)){
+                let aNum = parseInt(a)
+                let bNum = parseInt(b)
+                setValue(add(aNum, bNum))
+            } else {
+                alert('숫자만 입력 가능합니다.')
+            }
         }
     }
 
